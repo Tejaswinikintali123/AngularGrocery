@@ -3,14 +3,14 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-grocery",
   templateUrl: "./app.grocery.html",
-  styleUrls: ["../../assets/bootstrap-4.3.1-dist/css/bootstrap.css"]
+  styleUrls: ["../../assets/css/bootstrap.css"]
 })
 export class GroceryComponent {
   task: string;
-   tasks = [];
+  tasks = [];
 
   onClick() {
-    this.tasks.push({name:this.task });
+    this.tasks.push({ name: this.task });
     this.task = "";
     console.log(this.tasks);
   }
